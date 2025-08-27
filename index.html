@@ -50,14 +50,14 @@
             <div class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-10 my-2">
                 <div
                     class="flex justify-evenly items-center gap-2 px-8 md:px-6 py-1 rounded-3xl bg-[#41ff6b1a] font-semibold">
-                    <p>0</p>
+                    <p id="heart-counter">0</p>
                     <figure class="w-[1.5rem]">
                         <img src="./assets/heart.png" alt="">
                     </figure>
                 </div>
 
                 <div class="flex justify-evenly items-center gap-2 px-6 py-1 rounded-3xl bg-[#41ff6b1a] font-bold">
-                    <p>100</p>
+                    <p id="coin-count">100</p>
                     <figure class="w-[1.5rem]">
                         <img src="./assets/coin.png" alt="">
                     </figure>
@@ -87,9 +87,9 @@
         </section>
 
         <!-- lower section -->
-        <section class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-7 py-12">
+        <section class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-7 py-12 border-2">
             <!-- card container section -->
-            <section class="md:col-span-9 rounded-2xl">
+            <section id="all-card-container" class="md:col-span-9 rounded-2xl border-2">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                     <!-- card 1 -->
                     <div class="bg-base-100 rounded-xl">
@@ -98,10 +98,10 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/emergency.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart heart-btn"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">National Emergency Number</h3>
-                            <p class="text-[1rem]">National Emergency</p>
+                            <p class="text-[1rem]">National Emergency Service</p>
                             <p class="font-bold text-[1.2rem]">999</p>
                             <div class="w-fit text-center px-3 py-1 bg-[#f2f2f2] rounded-2xl mb-4">
                                 <p>All</p>
@@ -110,7 +110,7 @@
                             <div class="grid grid-cols-2 gap-5 ">
                                 <button class="btn w-full"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                                <button class="btn w-full bg-[#00a63e] text-white"><i
+                                <button class="btn w-full bg-[#00a63e] text-white btn-call"><i
                                         class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/police.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart heart-btn"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Police Helpline Number</h3>
                             <p class="text-[1rem]">Police</p>
@@ -134,7 +134,7 @@
                             <div class="grid grid-cols-2 gap-5 ">
                                 <button class="btn w-full"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                                <button class="btn w-full bg-[#00a63e] text-white"><i
+                                <button class="btn w-full bg-[#00a63e] text-white btn-call"><i
                                         class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/fire-service.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart heart-btn"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Fire Service Number</h3>
                             <p class="text-[1rem]">Fire Service</p>
@@ -158,8 +158,8 @@
                             <div class="grid grid-cols-2 gap-5 ">
                                 <button class="btn w-full"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                                <button class="btn w-full bg-[#00a63e] text-white"><i
-                                        class="fa-solid fa-phone"></i>Call</button>
+                                <button class="btn w-full bg-[#00a63e] text-white btn-call"><i
+                                        class="fa-solid fa-phone "></i>Call</button>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/ambulance.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart heart-btn"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Ambulance Service</h3>
                             <p class="text-[1rem]">Ambulance</p>
@@ -182,7 +182,7 @@
                             <div class="grid grid-cols-2 gap-5 ">
                                 <button class="btn w-full"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                                <button class="btn w-full bg-[#00a63e] text-white"><i
+                                <button class="btn w-full bg-[#00a63e] text-white btn-call"><i
                                         class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
@@ -194,7 +194,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/emergency.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart heart-btn"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Women & Child Helpline</h3>
                             <p class="text-[1rem]">Women & Child Helpline</p>
@@ -206,7 +206,7 @@
                             <div class="grid grid-cols-2 gap-5 ">
                                 <button class="btn w-full"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                                <button class="btn w-full bg-[#00a63e] text-white"><i
+                                <button class="btn w-full bg-[#00a63e] text-white btn-call"><i
                                         class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
@@ -218,7 +218,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/emergency.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart heart-btn"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Anti-Corruption Helpline</h3>
                             <p class="text-[1rem]">Anti-Corruption</p>
@@ -230,7 +230,7 @@
                             <div class="grid grid-cols-2 gap-5 ">
                                 <button class="btn w-full"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                                <button class="btn w-full bg-[#00a63e] text-white"><i
+                                <button class="btn w-full bg-[#00a63e] text-white btn-call"><i
                                         class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
@@ -242,7 +242,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/emergency.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart heart-btn"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Electricity Helpline</h3>
                             <p class="text-[1rem]">Electricity Outage</p>
@@ -254,7 +254,7 @@
                             <div class="grid grid-cols-2 gap-5 ">
                                 <button class="btn w-full"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                                <button class="btn w-full bg-[#00a63e] text-white"><i
+                                <button class="btn w-full bg-[#00a63e] text-white btn-call"><i
                                         class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
@@ -266,7 +266,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/brac.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart heart-btn"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Brac Helpline</h3>
                             <p class="text-[1rem]">Brac</p>
@@ -278,7 +278,7 @@
                             <div class="grid grid-cols-2 gap-5 ">
                                 <button class="btn w-full"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                                <button class="btn w-full bg-[#00a63e] text-white"><i
+                                <button class="btn w-full bg-[#00a63e] text-white btn-call"><i
                                         class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
@@ -290,7 +290,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/Bangladesh-Railway.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart heart-btn"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Bangladesh Railway Helpline </h3>
                             <p class="text-[1rem]">Bangladesh Railway</p>
@@ -302,7 +302,7 @@
                             <div class="grid grid-cols-2 gap-5 ">
                                 <button class="btn w-full"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                                <button class="btn w-full bg-[#00a63e] text-white"><i
+                                <button class="btn w-full bg-[#00a63e] text-white btn-call"><i
                                         class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
@@ -336,6 +336,8 @@
             </aside>
         </section>
     </main>
+    <!-- js file connection -->
+     <script src="./index.js"></script>
 </body>
 
 </html>
