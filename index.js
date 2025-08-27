@@ -2,6 +2,8 @@
 document
   .getElementById("all-card-container")
   .addEventListener("click", function (event) {
+    console.log(event.target);
+    
     //for heart button it will run this
     if (event.target.classList.contains("heart-btn")) {
       const heartCounter = Number(
