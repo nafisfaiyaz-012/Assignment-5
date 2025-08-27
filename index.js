@@ -76,10 +76,7 @@ document
       
       //showing alert for copy button
       alert(
-        event.target.parentNode.parentNode.childNodes[3].innerText +
-          " " +
-          event.target.parentNode.parentNode.childNodes[7].innerText +
-          " copied."
+        event.target.parentNode.parentNode.childNodes[3].innerText + ` "${event.target.parentNode.parentNode.childNodes[7].innerText}"` + " copied."
       );
       document.getElementById("copy-count").innerText = newCopyCount;
     }
