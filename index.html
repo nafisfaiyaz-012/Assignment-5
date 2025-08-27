@@ -87,9 +87,9 @@
         </section>
 
         <!-- lower section -->
-        <section class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-7 py-12 border-2">
+        <section class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-7 py-12">
             <!-- card container section -->
-            <section id="all-card-container" class="md:col-span-9 rounded-2xl border-2">
+            <section id="all-card-container" class="md:col-span-9 rounded-2xl">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                     <!-- card 1 -->
                     <div class="bg-base-100 rounded-xl">
@@ -98,7 +98,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/emergency.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart heart-btn"></i>
+                                <i class="fa-regular fa-heart heart-btn cursor-pointer"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">National Emergency Number</h3>
                             <p class="text-[1rem]">National Emergency Service</p>
@@ -122,7 +122,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/police.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart heart-btn"></i>
+                                <i class="fa-regular fa-heart heart-btn cursor-pointer"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Police Helpline Number</h3>
                             <p class="text-[1rem]">Police</p>
@@ -146,7 +146,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/fire-service.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart heart-btn"></i>
+                                <i class="fa-regular fa-heart heart-btn cursor-pointer"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Fire Service Number</h3>
                             <p class="text-[1rem]">Fire Service</p>
@@ -170,7 +170,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/ambulance.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart heart-btn"></i>
+                                <i class="fa-regular fa-heart heart-btn cursor-pointer"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Ambulance Service</h3>
                             <p class="text-[1rem]">Ambulance</p>
@@ -194,7 +194,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/emergency.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart heart-btn"></i>
+                                <i class="fa-regular fa-heart heart-btn cursor-pointer"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Women & Child Helpline</h3>
                             <p class="text-[1rem]">Women & Child Helpline</p>
@@ -218,7 +218,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/emergency.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart heart-btn"></i>
+                                <i class="fa-regular fa-heart heart-btn cursor-pointer"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Anti-Corruption Helpline</h3>
                             <p class="text-[1rem]">Anti-Corruption</p>
@@ -242,7 +242,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/emergency.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart heart-btn"></i>
+                                <i class="fa-regular fa-heart heart-btn cursor-pointer"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Electricity Helpline</h3>
                             <p class="text-[1rem]">Electricity Outage</p>
@@ -266,7 +266,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/brac.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart heart-btn"></i>
+                                <i class="fa-regular fa-heart heart-btn cursor-pointer"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Brac Helpline</h3>
                             <p class="text-[1rem]">Brac</p>
@@ -290,7 +290,7 @@
                                 <figure class="w-[3.2rem] p-3 bg-[#ffe3e2] rounded-2xl">
                                     <img src="./assets/Bangladesh-Railway.png" alt="">
                                 </figure>
-                                <i class="fa-regular fa-heart heart-btn"></i>
+                                <i class="fa-regular fa-heart heart-btn cursor-pointer"></i>
                             </div>
                             <h3 class="font-bold text-[1.2rem]">Bangladesh Railway Helpline </h3>
                             <p class="text-[1rem]">Bangladesh Railway</p>
@@ -311,27 +311,19 @@
             </section>
 
             <!-- call history section -->
-            <aside class="md:col-span-3 p-4 bg-white rounded-2xl">
+            <aside  class="md:col-span-3 p-4 bg-white rounded-2xl">
 
                 <div class="flex justify-between items-center">
                     <div class="flex items-center gap-3">
                         <i class="fa-solid fa-clock-rotate-left"></i>
                         <h1>Call History</h1>
                     </div>
-                    <button class="bg-[#00a63e] px-6 py-2 rounded-3xl text-white">Clear</button>
+                    <button id="btn-clear" class="bg-[#00a63e] px-6 py-2 rounded-3xl text-white cursor-pointer">Clear</button>
                 </div>
 
                 <!-- this div will appear in the history section -->
-                <div>
-                    <div class="bg-[#fafafa] p-4 flex justify-between items-center rounded-3xl my-5">
-                        <div>
-                            <p class="font-semibold">Fire Service Number</p>
-                            <p>999</p>
-                        </div>
-                        <div>
-                            Local Time In JS
-                        </div>
-                    </div>
+                <div id="call-history">
+                    
                 </div>
             </aside>
         </section>
