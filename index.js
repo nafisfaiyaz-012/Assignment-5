@@ -2,7 +2,6 @@
 document
   .getElementById("all-card-container")
   .addEventListener("click", function (event) {
-    // console.log(event.target.closest('.btn-call'));
 
     //for heart button it will run this
     if (event.target.classList.contains("heart-btn")) {
@@ -20,7 +19,6 @@ document
       const serviceName =
         event.target.closest(".btn-call").parentNode.parentNode.childNodes[5]
           .innerText;
-      console.log(serviceName);
 
       const serviceNumber =
         event.target.closest(".btn-call").parentNode.parentNode.childNodes[7]
